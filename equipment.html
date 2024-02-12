@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Equipment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(5, 5, 54);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 75px;
+            z-index: 1000;
+            background-color: #0f0f30;
+            color: #fff;
+            text-align: center;
+        }
+
+        .equipment {
+            margin-top: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+
+        .equipment-item {
+            max-width: 300px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .equipment-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        
+        footer {
+            background-color: rgb(5, 5, 54);
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: right;
+        }
+
+        .footer-content p {
+            margin: 0;
+        }
+
+        .footer-content a {
+            color: rgb(8, 97, 195);
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .equipment {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .equipment-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gym Equipment Showcase</h1>
+    </header>
+
+    <section class="equipment">
+        <article class="equipment-item">
+            <img src="Image/Dumbbells.jpg" alt="Dumbbells">
+            <h2>Dumbbells</h2>
+            <p>Improve strength and build muscle with a variety of dumbbell exercises.</p>
+        </article>
+
+        <article class="equipment-item">
+            <img src="Image/Treadmill.jpg" alt="Treadmill">
+            <h2>Treadmill</h2>
+            <p>Enhance cardiovascular fitness and burn calories with a treadmill workout.</p>
+        </article>
+
+        <article class="equipment-item">
+            <img src="Image/Barbell.jpg" alt="Barbell">
+            <h2>Barbell</h2>
+            <p>Perform compound exercises like squats and deadlifts to target multiple muscle groups.</p>
+        </article>
+
+        <article class="equipment-item">
+            <img src="Image/Elliptical Machine.jpg" alt="Elliptical Machine">
+            <h2>Elliptical Machine</h2>
+            <p>Low-impact cardio option for full-body workouts.</p>
+        </article>
+
+        <article class="equipment-item">
+            <img src="Image/Kettlebell.jpg" alt="Kettlebell">
+            <h2>Kettlebell</h2>
+            <p>Dynamic tool for functional and strength training exercises.</p>
+        </article>
+
+        <article class="equipment-item">
+            <img src="Image/Rowing Machine.jpg" alt="Rowing Machine">
+            <h2>Rowing Machine</h2>
+            <p>Engage multiple muscle groups with a low-impact, full-body workout.</p>
+        </article>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 AL'S Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
